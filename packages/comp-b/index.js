@@ -1,0 +1,1 @@
+console.log('comp-b v.0.0.1');
