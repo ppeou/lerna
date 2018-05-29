@@ -1,1 +1,1 @@
-console.log('comp-d v.0.0.3');
+console.log('comp-d v.0.0.4');
