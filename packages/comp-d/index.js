@@ -1,1 +1,0 @@
-console.log('comp-d v.0.0.4');
