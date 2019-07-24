@@ -1,11 +1,12 @@
 {
   "name": "@ppeou-pre/comp-a",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Component A",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "gitHead": "99369e724562958a4aecc4b6aaffd28a88075603"
 }
