@@ -1,6 +1,6 @@
 {
   "name": "@ppeou-pre/comp-a",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Component A",
   "main": "index.js",
   "scripts": {
