@@ -1,0 +1,9 @@
+{
+  "name": "@ppeou-pre/comp-b",
+  "version": "0.0.0",
+  "description": "Component B",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  }
+}
