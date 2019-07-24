@@ -1,13 +1,8 @@
 {
-  "name": "@ppeou/comp-b",
-  "version": "0.0.1",
-  "description": "sample component",
+  "name": "@ppeou-pre/comp-b",
+  "version": "0.0.3",
+  "description": "Component B",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "MIT",
   "publishConfig": {
     "access": "public"
   }

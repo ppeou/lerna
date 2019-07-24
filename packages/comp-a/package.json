@@ -1,13 +1,12 @@
 {
-  "name": "@ppeou/comp-a",
-  "version": "0.0.2",
-  "description": "sample component",
-  "main": "index.js",
+  "name": "@ppeou-pre/comp-a",
+  "version": "0.0.6",
+  "description": "Component A",
+  "main": "lib/index.cjs.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c --environment BUILD:production",
+    "prepublish": "npm run build"
   },
-  "author": "",
-  "license": "MIT",
   "publishConfig": {
     "access": "public"
   }
