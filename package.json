@@ -3,5 +3,41 @@
   "private": true,
   "devDependencies": {
     "lerna": "^3.16.4"
+  },
+  "scripts": {
+    "test": "lerna bootstrap",
+    "docs": "npm run docs:gen && node ./scripts/docs/index.js",
+    "docs:gen": "lerna run docs",
+    "prepare-release": "git checkout master && git pull --rebase origin master && npm run docs && lerna updated",
+    "release": "npm run prepare-release && lerna publish --exact",
+    "lint": "eslint \"packages/**/*.js\" --config \"./.eslintrc\"",
+    "lint:fix": "eslint \"packages/**/*.js\" --config \"./.eslintrc\" --fix",
+    "format": "prettier-eslint \"packages/**/*.js\" --config \"./.eslintrc\" --write",
+    "precommit": "lint-staged"
+  },
+  "eslintConfig": {
+    "extends": "airbnb"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-eslint --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "coveralls": "^2.13.1",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "lint-staged": "^7.0.4",
+    "marked": "^0.3.19",
+    "prettier": "^1.12.1",
+    "prettier-eslint-cli": "^4.7.1"
   }
 }

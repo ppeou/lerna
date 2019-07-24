@@ -2,7 +2,11 @@
   "name": "@ppeou-pre/comp-a",
   "version": "0.0.6",
   "description": "Component A",
-  "main": "index.js",
+  "main": "lib/index.cjs.js",
+  "scripts": {
+    "build": "rollup -c --environment BUILD:production",
+    "prepublish": "npm run build"
+  },
   "publishConfig": {
     "access": "public"
   }
