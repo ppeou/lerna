@@ -3,8 +3,7 @@
   "command": {
     "publish": {
       "ignoreChanges": [
-        ".idea",
-        "*.md"
+        ".idea/*"
       ],
       "message": "chore(release): publish"
     }
