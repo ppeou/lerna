@@ -3,13 +3,7 @@
   "version": "0.0.5",
   "description": "Component A",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "publishConfig": {
     "access": "public"
-  },
-  "author": "@ppeou",
-  "license": "MIT",
-  "gitHead": "3458429069d6bede7bf63242b439445b77b0dff3"
+  }
 }
