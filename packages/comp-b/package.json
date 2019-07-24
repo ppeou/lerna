@@ -1,6 +1,6 @@
 {
   "name": "@ppeou-pre/comp-b",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Component B",
   "main": "index.js",
   "publishConfig": {
