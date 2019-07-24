@@ -1,4 +1,14 @@
 {
+  "npmClient": "npm",
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        ".idea",
+        "*.md"
+      ],
+      "message": "chore(release): publish"
+    }
+  },
   "packages": [
     "packages/*"
   ],
