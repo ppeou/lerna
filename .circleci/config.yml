@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - checkout
-      - run: git checkout -b develop develop
+      - run: git checkout -b developa develop
 
       # Download and cache dependencies
       - restore_cache:
