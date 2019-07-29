@@ -27,15 +27,5 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - persist_to_workspace:
-          root: ~/repo
-          paths: .
-
-      - attach_workspace:
-          at: ~/repo
-
-      # Authenticate with registry
-      - run: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
-
       # run publish
       - run: npm run release
