@@ -9,7 +9,7 @@
     "docs": "npm run docs:gen && node ./scripts/docs/index.js",
     "docs:gen": "lerna run docs",
     "prepare-release": "git checkout master && git pull --rebase origin master && lerna changed",
-    "release": "npm run prepare-release && lerna publish --yes --ignore-scripts --ignore-prepublish",
+    "release": "npm run prepare-release && lerna publish from-package --yes --ignore-scripts --ignore-prepublish",
     "lint": "eslint \"packages/**/*.js\" --config \"./.eslintrc\"",
     "lint:fix": "eslint \"packages/**/*.js\" --config \"./.eslintrc\" --fix",
     "format": "prettier-eslint \"packages/**/*.js\" --config \"./.eslintrc\" --write",
