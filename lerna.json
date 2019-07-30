@@ -1,6 +1,9 @@
 {
   "npmClient": "npm",
   "command": {
+    "version": {
+      "allowBranch": ["master", "develop"]
+    },
     "publish": {
       "ignoreChanges": [
         ".idea/*"
