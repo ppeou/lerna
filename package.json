@@ -8,7 +8,7 @@
     "test": "lerna bootstrap",
     "docs": "npm run docs:gen && node ./scripts/docs/index.js",
     "docs:gen": "lerna run docs",
-    "prepare-release": "lerna changed",
+    "prepare-release": "npm ci && lerna changed",
     "release": "npm run prepare-release && lerna publish --yes --ignore-scripts --ignore-prepublish",
     "lint": "eslint \"packages/**/*.js\" --config \"./.eslintrc\"",
     "lint:fix": "eslint \"packages/**/*.js\" --config \"./.eslintrc\" --fix",
