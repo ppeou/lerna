@@ -14,7 +14,7 @@
     "lint:fix": "eslint \"packages/**/*.js\" --config \"./.eslintrc\" --fix",
     "format": "prettier-eslint \"packages/**/*.js\" --config \"./.eslintrc\" --write",
     "precommit": "lint-staged",
-    "postpublish": "git push origin master"
+    "postpublish": "echo 'here' && git push origin master"
   },
   "eslintConfig": {
     "extends": "airbnb"
